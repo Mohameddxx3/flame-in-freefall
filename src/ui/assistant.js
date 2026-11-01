@@ -6,6 +6,6 @@ export function answer(question, data) {
     return {
         text: "No answer available yet.",
         experimentIds: [],
-        suggestions: []
+        suggestions: [],
     };
 }

@@ -10,6 +10,6 @@ export function score(row, config) {
     return {
         score: 0,
         breakdown: {},
-        partial: false
+        partial: false,
     };
 }
