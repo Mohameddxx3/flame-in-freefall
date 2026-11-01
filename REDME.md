@@ -1,4 +1,4 @@
-#Flame in Freefall 🔥
+# Flame in Freefall 🔥
 
 AI-Powered Fire Safety Insights from Microgravity Combustion Data.
 
@@ -6,21 +6,21 @@ AI-Powered Fire Safety Insights from Microgravity Combustion Data.
 
 An interactive web platform that explores microgravity combustion experiments and provides insights into fire safety in space.
 
-##Technologies
+## Technologies
 
 Vite
 Vanilla JavaScript (ES Modules)
 HTML5
 CSS3
 
-##Team
+## Team
 
 Frontend Developer
 Backend Developer
 AI Developers (2)
 Tester
 
-##Run Locally
+## Run Locally
 
 1-Clone the repository.
 2-Install dependencies:
