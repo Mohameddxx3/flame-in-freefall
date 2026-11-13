@@ -1,8 +1,12 @@
 import "./style.css";
+import { initScrollReveal } from "./utils/scrollReveal.js";
+import { renderHeader } from "./ui/header.js";
+import { renderFooter } from "./ui/footer.js";
+import { renderHero } from "./ui/hero.js";
 import { renderExplore } from "./ui/explore.js";
 import { renderInsights } from "./ui/insights.js";
 import { renderAssistant } from "./ui/assistant.js";
-import { renderSimulator } from "./ui/simulator.js";
+import { renderSimulator, mountSimulator } from "./ui/simulator.js";
 
 export function encodeState(filters) {
     return "#/explore";
@@ -25,7 +29,7 @@ const app = document.querySelector("#app");
 
 // Application State
 const state = {
-    currentRoute: window.location.hash || "#/explore",
+    currentRoute: window.location.hash || "#/home",
 };
 
 // Update State
@@ -34,30 +38,75 @@ function setState(newState) {
     render();
 }
 
+let cleanupReveal = null;
+let cleanupSimulator = null;
+let simulatorInstance = null;
+
 // Render Application
 function render() {
+
+    if (cleanupReveal) {
+        cleanupReveal();
+        cleanupReveal = null;
+    }
+    if (cleanupSimulator) {
+        cleanupSimulator();
+        cleanupSimulator = null;
+    }
+    if (simulatorInstance) {
+        simulatorInstance.dispose();
+        simulatorInstance = null;
+    }
+
     const route = state.currentRoute;
 
+    app.innerHTML = `
+        ${renderHeader(route)}
+
+        <main id="main-content" class="app-main" tabindex="-1"></main>
+
+        ${renderFooter()}
+    `;
+
+    const main = app.querySelector("#main-content");
+
     switch (route) {
+        case "#/home":
+            main.innerHTML = renderHero();
+            break;
+
         case "#/explore":
-            app.innerHTML = "<h1>Explore</h1>";
+            main.innerHTML = renderExplore();
             break;
 
         case "#/insights":
-            app.innerHTML = "<h1>Insights</h1>";
+            main.innerHTML = renderInsights();
+            
             break;
 
         case "#/assistant":
-            app.innerHTML = "<h1>Assistant</h1>";
+            main.innerHTML = renderAssistant();
+            requestAnimationFrame(() => {
+                const messagesContainer = document.getElementById("assistant-messages");
+
+                if (messagesContainer) {
+                    messagesContainer.scrollTop = messagesContainer.scrollHeight;
+                }
+            });
             break;
 
-        case "#/simulator":
-            app.innerHTML = "<h1>Simulator</h1>";
+        case "#/simulator": {
+            main.innerHTML = renderSimulator();
+
+            simulatorInstance = mountSimulator(main, state);
             break;
+        }
 
         default:
-            app.innerHTML = "<h1>404 - Page Not Found</h1>";
+            main.innerHTML = "<h1>404 - Page Not Found</h1>";
     }
+
+    cleanupReveal = initScrollReveal();
 }
 
 // Hash Router
@@ -69,7 +118,7 @@ window.addEventListener("hashchange", () => {
 
 // Initial Render
 if (!window.location.hash) {
-    window.location.hash = "#/explore";
+    window.location.hash = "#/home";
 } else {
     render();
 }

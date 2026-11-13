@@ -1,0 +1,84 @@
+[
+    {
+        "id": "INS-01",
+        "question": "Why is the flame round in microgravity?",
+        "answer": "On Earth, hot gases rise because of buoyancy, creating the familiar teardrop flame. In microgravity, this movement disappears, allowing oxygen to reach the flame more evenly from all directions and creating a spherical shape.",
+        "tag": "Flame shape",
+        "sources": [
+            {
+                "label": "NASA - Why NASA is Studying Flames in Space",
+                "url": "https://science.nasa.gov/biological-physical/resources/explainers-infographics/why-nasa-is-studying-flames-in-space/"
+            }
+        ],
+        "relatedExperimentIds": []
+    },
+    {
+        "id": "INS-02",
+        "question": "Why can a flame be dim blue and still require attention?",
+        "answer": "Low-airflow flames in microgravity can become dim blue and stable. However, a sudden increase in airflow can make them flare up. FLEX research also discovered cool flames that can continue burning after the visible flame disappears.",
+        "tag": "Flame shape",
+        "sources": [
+            {
+                "label": "NASA - Cool Flames Investigation",
+                "url": "https://www.nasa.gov/missions/station/cool-flames-created-during-a-first-for-international-space-station-research/"
+            },
+            {
+                "label": "NASA - BASS-II Research",
+                "url": "https://ntrs.nasa.gov/citations/20160000593"
+            }
+        ],
+        "relatedExperimentIds": []
+    },
+    {
+        "id": "INS-03",
+        "question": "How do airflow and oxygen change flame spread?",
+        "answer": "Flame behavior depends on airflow speed and oxygen concentration. NASA experiments show that even small changes in airflow can affect flame stability, growth, spread, and extinction. These factors are essential when designing spacecraft ventilation and fire suppression systems.",
+        "tag": "Spread",
+        "sources": [
+            {
+                "label": "NASA - SoFIE-MIST",
+                "url": "https://science.nasa.gov/biological-physical/investigations/sofie-mist/"
+            }
+        ],
+        "relatedExperimentIds": []
+    },
+    {
+        "id": "INS-04",
+        "question": "Which materials has NASA burned in space?",
+        "answer": "NASA has studied materials including acrylic, plexiglass, and cotton-based fabrics. Experiments such as BASS-II and SoFIE investigate how material properties, thickness, airflow, and gravity affect ignition and flame spread.",
+        "tag": "Materials",
+        "sources": [
+            {
+                "label": "NASA - Fighting Fire with Fire",
+                "url": "https://www.nasa.gov/humans-in-space/fighting-fire-with-fire-new-space-station-experiments-study-flames-in-space/"
+            }
+        ],
+        "relatedExperimentIds": []
+    },
+    {
+        "id": "INS-05",
+        "question": "Why can't NASA rely only on Earth fire tests?",
+        "answer": "Earth-based tests are performed under normal gravity, where buoyancy strongly affects flames. In microgravity, this effect disappears and combustion behaves differently. Materials that pass standard Earth tests may behave differently in spacecraft environments.",
+        "tag": "Materials",
+        "sources": [
+            {
+                "label": "NASA - Solid Fuel Ignition and Extinction",
+                "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/solid-fuel-ignition-and-extinction-sofie/"
+            }
+        ],
+        "relatedExperimentIds": []
+    },
+    {
+        "id": "INS-06",
+        "question": "What do Moon and Mars habitats mean for fire safety?",
+        "answer": "Reduced gravity and different cabin atmospheres can change how materials ignite and how flames spread. NASA studies these conditions to understand material flammability and help design safer habitats for future lunar and planetary missions.",
+        "tag": "Moon and Mars",
+        "sources": [
+            {
+                "label": "NASA - Flammability of Materials on the Moon",
+                "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-of-materials-on-the-moon-fm2/"
+            }
+        ],
+        "relatedExperimentIds": []
+    }
+]
