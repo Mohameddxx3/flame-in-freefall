@@ -14,7 +14,7 @@ export function renderHero() {
             <span class="hero-badge">NASA Space Apps Challenge 2026</span>
 
             <h1>
-                Fire in Space.<br>
+                Flame in Space.<br>
                 <span>Science on Earth.</span>
             </h1>
 

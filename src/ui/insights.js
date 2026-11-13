@@ -128,16 +128,16 @@ export function renderInsights() {
             <header class="insights-header reveal">
                 <div class="insights-eyebrow">
                     <span class="status-dot"></span>
-                    NASA FIRE SAFETY RESEARCH
+                    NASA FLAME SAFETY RESEARCH
                 </div>
 
                 <h1>
-                    Fire Safety <span>Insights</span>
+                    Flame Safety <span>Insights</span>
                 </h1>
 
                 <p>
                     Discover what microgravity combustion research
-                    reveals about fire behavior and astronaut safety.
+                    reveals about Flame behavior and astronaut safety.
                 </p>
 
                 <div class="insights-stats">

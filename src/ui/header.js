@@ -12,7 +12,7 @@ export function renderHeader(currentRoute) {
 
             <a href="#/explore" class="logo">
                 <img src="/flame.svg" alt="" class="logo-icon">
-                <span>Volcano</span>
+                <span>Project-99</span>
             </a>
 
             <nav class="main-nav" aria-label="Main navigation">
