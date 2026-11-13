@@ -1,0 +1,2 @@
+id,name,program,platform,phenomenon,fuel_type,fuel_category,gravity_level,o2_percent,pressure_kpa,flow_speed_cm_s,flow_direction,sample_geometry,flame_behavior,spread_class,duration_seconds,scoring_eligible,takeaway,source_url,source_note,verified_by
+SAF-01,Saffire 1 test,Saffire,Cygnus (after ISS),Solid flame spread,PMMA,Solid,Microgravity (0g),21.0,101.3,0,None,Flat sheet,Steady spread,3,120,true,Sample takeaway,https://nasa.gov/saffire1,Note text,John Doe

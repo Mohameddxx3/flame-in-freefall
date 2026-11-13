@@ -1,0 +1,65 @@
+[
+  {
+    "id": "INS-01",
+    "question": "Why is the flame round in microgravity?",
+    "answer": "On Earth, hot gases rise because of buoyancy, which creates the familiar teardrop flame. In microgravity, that movement disappears. Oxygen reaches the flame evenly from all directions, so the flame becomes spherical.",
+    "tags": ["Flame shape"],
+    "related_experiment_ids": ["ACME-03", "BASS-04"],
+    "source_url": "https://science.nasa.gov/biological-physical/resources/explainers-infographics/why-nasa-is-studying-flames-in-space/",
+    "source_label": "NASA - Why NASA is Studying Flames in Space"
+  },
+  {
+    "id": "INS-02",
+    "question": "Why is a dim blue flame still dangerous?",
+    "answer": "In BASS-II tests, PMMA burned in microgravity as a dim blue flame that stayed stable at low airflow. When airflow increased suddenly, the flame could flare up quickly. A calm-looking flame can still change fast.",
+    "tags": ["Spread"],
+    "related_experiment_ids": ["BASS-03"],
+    "source_url": "https://ntrs.nasa.gov/citations/20160000593",
+    "source_label": "NASA - BASS-II Research"
+  },
+  {
+    "id": "INS-03",
+    "question": "How do airflow and oxygen change flame spread?",
+    "answer": "Flame spread depends on airflow and oxygen concentration. In BASS-II tests with fabric in microgravity, spread rate rose steadily as airflow increased across the tested range. Oxygen level also affects flame growth and extinction, so both factors matter for spacecraft fire safety.",
+    "tags": ["Oxygen", "Spread"],
+    "related_experiment_ids": ["BASS-01", "SAF-04"],
+    "source_url": "https://ntrs.nasa.gov/citations/20130012832",
+    "source_label": "NASA - BASS-II Fabric Spread Research"
+  },
+  {
+    "id": "INS-04",
+    "question": "Which materials has NASA burned in space?",
+    "answer": "NASA has burned several materials in space, including cotton-based fabric (SIBAL) and PMMA (acrylic). Saffire and BASS-II experiments compare how material type, sample size, and airflow affect ignition and flame spread.",
+    "tags": ["Materials"],
+    "related_experiment_ids": ["SAF-01", "SAF-04", "BASS-03"],
+    "source_url": "https://www.nasa.gov/humans-in-space/fighting-fire-with-fire-new-space-station-experiments-study-flames-in-space/",
+    "source_label": "NASA - Fighting Fire with Fire"
+  },
+  {
+    "id": "INS-05",
+    "question": "Why can't NASA rely only on Earth fire tests?",
+    "answer": "Standard Earth tests run in normal gravity, where buoyancy strongly drives the flame. Saffire checks how well those Earth results predict behavior in microgravity. Materials that pass Earth tests may still burn differently in a spacecraft.",
+    "tags": ["Materials"],
+    "related_experiment_ids": ["EARTH-01", "SAF-01"],
+    "source_url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/solid-fuel-ignition-and-extinction-sofie/",
+    "source_label": "NASA - Solid Fuel Ignition and Extinction"
+  },
+  {
+    "id": "INS-06",
+    "question": "What do Moon and Mars habitats mean for fire safety?",
+    "answer": "Reduced gravity and different cabin atmospheres can change how materials ignite and how flames spread. NASA studies these conditions to understand material flammability and to help design safer habitats for future lunar and planetary missions.",
+    "tags": ["Mars/Moon relevance"],
+    "related_experiment_ids": [],
+    "source_url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-of-materials-on-the-moon-fm2/",
+    "source_label": "NASA - Flammability of Materials on the Moon"
+  },
+  {
+    "id": "INS-07",
+    "question": "Why is putting out a fire different in space?",
+    "answer": "On Earth, buoyancy carries smoke away from the flame and pulls extinguishing agents down onto it. In microgravity, that natural transport is missing. Smoke and agents can stay near the fire, so suppression must be designed differently.",
+    "tags": ["Suppression"],
+    "related_experiment_ids": ["FLEX-02", "SAF-06"],
+    "source_url": "https://ntrs.nasa.gov/citations/20180005168",
+    "source_label": "NASA - Saffire Fire Safety Experiment"
+  }
+]

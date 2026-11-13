@@ -1,0 +1,4 @@
+{
+  "note": "Placeholder. AI B sends the min and max spread rates (cm/s) at about H8; Backend fills the four band edges (log scale) here at BE-17.",
+  "edges_cm_s": [null, null, null, null]
+}

@@ -1,0 +1,49 @@
+[
+  {
+    "id": "SAF-01",
+    "name": "Saffire 1 test",
+    "program": "Saffire",
+    "platform": "Cygnus (after ISS)",
+    "phenomenon": "Solid flame spread",
+    "fuel_type": "PMMA",
+    "fuel_category": "Solid",
+    "gravity_level": "Microgravity (0g)",
+    "o2_percent": 21,
+    "pressure_kpa": 101.3,
+    "flow_speed_cm_s": 0,
+    "flow_direction": "None",
+    "sample_geometry": "Flat sheet",
+    "flame_behavior": "Steady spread",
+    "spread_class": 3,
+    "duration_seconds": 120,
+    "scoring_eligible": true,
+    "takeaway": "Sample takeaway",
+    "source_url": "https://nasa.gov/saffire1",
+    "source_note": "Note text",
+    "verified_by": "John Doe",
+    "hazard": {
+      "score": 65,
+      "breakdown": {
+        "spread": {
+          "value": 0.5,
+          "weight": 0.55,
+          "used": true,
+          "points": 28
+        },
+        "oxygen": {
+          "value": 0.24,
+          "weight": 0.1,
+          "used": true,
+          "points": 2
+        },
+        "duration": {
+          "value": 1,
+          "weight": 0.35,
+          "used": true,
+          "points": 35
+        }
+      },
+      "partial": false
+    }
+  }
+]
