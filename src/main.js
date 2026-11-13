@@ -3,10 +3,11 @@ import { initScrollReveal } from "./utils/scrollReveal.js";
 import { renderHeader } from "./ui/header.js";
 import { renderFooter } from "./ui/footer.js";
 import { renderHero } from "./ui/hero.js";
-import { renderExplore } from "./ui/explore.js";
+import { renderExplore, initExplore } from "./ui/explore.js";
 import { renderInsights } from "./ui/insights.js";
 import { renderAssistant } from "./ui/assistant.js";
 import { renderSimulator, mountSimulator } from "./ui/simulator.js";
+
 
 export function encodeState(filters) {
     return "#/explore";
@@ -58,7 +59,7 @@ function render() {
         simulatorInstance = null;
     }
 
-    const route = state.currentRoute;
+    const route = state.currentRoute.split("?")[0];
 
     app.innerHTML = `
         ${renderHeader(route)}
@@ -77,6 +78,7 @@ function render() {
 
         case "#/explore":
             main.innerHTML = renderExplore();
+            initExplore();
             break;
 
         case "#/insights":
